@@ -6,4 +6,12 @@
 
 def pirates_say_arrrrrrrrr(string)
 
+    new_string=""
+    array=Array.new
+    array = string.split(//)
+    array.each_index{|i| next if string.downcase[i]!="r" 
+        break if (i) > string.size
+       new_string << string[i+1]
+    }
+    new_string
 end
